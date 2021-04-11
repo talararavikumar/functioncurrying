@@ -1,11 +1,11 @@
 import "./styles.css";
 
-function multiply(a) {
-  return function executeMultiply(b) {
-    return a * b;
-  };
-}
-
+// function multiply(a) {
+//   return function executeMultiply(b) {
+//     return a * b;
+//   };
+// }
+const multiply = (a) => (b) => a * b;
 const double = multiply(2);
 console.log(double(3)); // => 6
 console.log(double(5)); // => 10
